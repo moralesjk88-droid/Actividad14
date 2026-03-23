@@ -13,7 +13,7 @@ do
     opcion = int.Parse(Console.ReadLine());
 
 
-    switch(opcion)
+    switch(opcion )
     {
         case 1:
             Console.WriteLine("ingreso de productos");
@@ -62,7 +62,7 @@ do
             Console.WriteLine("Inventario de productos");
             foreach (KeyValuePair<int, Producto> item in inventario)
             {
-                Console.WriteLine($"Codigo del producto:_{item.Key}");
+                Console.WriteLine($"\nCodigo del producto:_{item.Key}");
                 item.Value.MostrarDatos();
             }
             Console.ReadKey();
